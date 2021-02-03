@@ -1,0 +1,151 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: poppins;
+    outline: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+.container {
+    width: 650px;
+    padding: 5rem;
+    height: 100vh;
+    background: hsl(193, 9%, 30%);
+    box-shadow: 0 0 5px 2px hsl(220, 10%, 70%);
+    color: white;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.container label {
+    font-size: 23px;
+    color: white;
+}
+
+
+.container .radius-inp {
+    width: 100%;
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.container .btn {
+    width: 100%;
+    padding: 6px 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    background: #3b78e7;
+    color: white;
+}
+
+.container .circle-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 0 0;
+}
+
+.circle-info .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: royalblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.circle .line {
+    width: 100%;
+    height: 5px;
+    background-color: saddlebrown;
+}
+
+.circle .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: saddlebrown;
+    border-radius: 100px;
+}
+
+.circle .left, .circle .right {
+    position: absolute;
+    font-size: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle .left {
+    left: -20px;
+}
+
+.circle .right {
+    right: -20px;
+}
+
+.circle .diameter-line, .circle .radius-line {
+    position: absolute;
+    height: 5px;
+    border-radius: 100px;
+}
+
+.circle .diameter-line {
+    width: 98%;
+    top: 39%;
+    transform: translateY(-40%);
+    left: 2px;
+    background-color: white;
+}
+
+.circle .radius-line {
+    top: 60%;
+    transform: translateY(-60%);
+    right: 1px;
+    background-color: red;
+    width: 50%;
+}
+
+.circle .diameter-text, .circle .radius-text {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+}
+
+.diameter-text {
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.radius-text {
+    right: 25%;
+    top: 70%;
+}
+
+.area {
+    font-size: 20px;
+    font-weight: 500;
+}
